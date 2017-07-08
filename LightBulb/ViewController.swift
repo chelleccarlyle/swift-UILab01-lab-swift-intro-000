@@ -26,6 +26,19 @@ class ViewController: UIViewController {
         
         print(sender.selectedSegmentIndex)
         
+        switch sender.selectedSegmentIndex {
+        case 0:
+            lightBulb.backgroundColor = UIColor.blue
+        case 1:
+            lightBulb.backgroundColor = UIColor.red
+        case 2:
+            lightBulb.backgroundColor = UIColor.green
+        case 3:
+            lightBulb.backgroundColor = UIColor.yellow
+        default:
+            print("Error on segmented control")
+        }
+        
     }
     
     
